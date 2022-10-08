@@ -9,7 +9,7 @@ int main(){
     vector<int> input;
    QuickSort B;
    Sort * sortB = &B;
-   input=sortB->sort(input);
+   input=sortB->sort({4,3,2,6});
     //BubbleSort B;
     //Sort*sortB=&B;
   //input=sortB->sort({4,3,2,6});
