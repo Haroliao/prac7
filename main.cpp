@@ -7,13 +7,21 @@
 using namespace std;
 int main(){
     vector<int> input;
-    QuickSort B;
-    Sort * sortB = &B;
-    input=sortB->sort({4,3,2,6});
+   QuickSort B;
+   Sort * sortB = &B;
+   input=sortB->sort({4,3,2,6});
     //BubbleSort B;
     //Sort*sortB=&B;
-   // sortB->sort({4,3,2,6});
+  // input=sortB->sort({4,3,2,6});
    RecursiveBinarySearch A;
-   A.search(input,2);
+  bool ans;
+  ans=A.search(input,2);
+  if (ans==0){cout <<"false ";}
+ if (ans==1){cout <<"true ";}
+     int size=input.size();
+    for (int i=0;i<size;i++){
+        cout << input[i]<<" ";
+    }
+    return 0;
 
 }

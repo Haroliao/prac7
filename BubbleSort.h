@@ -2,8 +2,8 @@
 #define BUBBLESORT_H
 #include"Sort.h"
 #include<vector>
-class BubbleSort:public Sort{
+class BubbleSort: public Sort{
     public:
-    std::vector<int> sort(std::vector<int> list);
+    virtual std::vector<int> sort(std::vector<int> list);
 };
 #endif

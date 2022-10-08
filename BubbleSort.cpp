@@ -2,7 +2,8 @@
 #include "BubbleSort.h"
 #include <vector>
 using namespace std;
-vector<int>BubbleSort::sort(vector<int> list){
+
+vector<int> BubbleSort::sort(vector<int> list){
     int i, j;
     int n=list.size();
     for (i = 0; i < n - 1; i++){
