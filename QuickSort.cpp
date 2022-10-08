@@ -25,22 +25,22 @@ void quicksort(vector<int>&list, int low, int high){
   }
 }
 vector<int> QuickSort::sort(vector<int> list){
-    //if(list.size()==1){return list;}
-   // if(list.size()==2){
-     //   if (list.at(0)>list.at(1)){
-        //    swap(list.at(1), list.at(0));
-       //     return list;
-      //  }
-      //  if (list.at(0)<list.at(1)){
-      //      return list;
-      //  }
-   // }
-   // if (list.size()>2){
+    if(list.size()==1){return list;}
+   if(list.size()==2){
+     if (list.at(0)>list.at(1)){
+        swap(list.at(1), list.at(0));
+        return list;
+      }
+      if (list.at(0)<list.at(1)){
+        return list;
+      }
+   }
+   if (list.size()>2){
     int high=list.size()-1;
      quicksort(list,0,high);
       return list;
-   // }
-   // return list;
+   }
+    return list;
 }
 
 

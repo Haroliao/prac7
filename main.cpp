@@ -15,7 +15,7 @@ int main(){
   //input=sortB->sort({4,3,2,6});
    RecursiveBinarySearch A;
   bool ans;
-  ans=A.search(input,2);
+  ans=A.search(input,1);
   if (ans==0){cout <<"false ";}
  if (ans==1){cout <<"true ";}
      int size=input.size();
