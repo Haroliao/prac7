@@ -9,7 +9,8 @@ int main(){
     vector<int> input;
    QuickSort B;
    Sort * sortB = &B;
-   input=sortB->sort({4,3,2,1});
+   //input=sortB->sort({-5,1,3,5,4,100,7777,2014,0});
+   input=sortB->sort({5,3,-5,4,100,7777,2014,0});
     //BubbleSort B;
     //Sort*sortB=&B;
   //input=sortB->sort({4,3,2,6});
