@@ -4,7 +4,7 @@
 using namespace std;
 
 int rearrange(vector<int>&list, int low, int high){
-    int pivot=list[2];
+    int pivot=list[high];
     int i=low-1;
     for (int j=low; j<high; j++){
         if (list[j]<pivot){
@@ -12,7 +12,7 @@ int rearrange(vector<int>&list, int low, int high){
             swap(list[i], list[j]);
         }
     }
-        swap(list[i+1],list[2]);
+        swap(list[i+1],list[high]);
         return (i+1);
 
 }
